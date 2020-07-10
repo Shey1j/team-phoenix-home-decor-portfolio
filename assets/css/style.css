@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #232433;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #e07a5f;
+}
+
+p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.jumbotron {
+  background-color: #dedadb;
+}
+
+button {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.education h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p.progress-level {
+    font-size: 14px;
+}
+
+.card.underlay {
+  left: 40px;
+  margin-top: 14px;
+  z-index: -1;
+  position: absolute;
+  width: 247px;
+  height: 87px;
+  background: #e07a5f;
+  border-top-left-radius: 10px !important;
+}
+
+.card.overlay {
+  margin-top: -100px;
+  right: 40px;
+  z-index: -1;
+  position: absolute;
+  width: 247px;
+  height: 87px;
+  background: #e07a5f;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.image {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+}
+
+.card.animated {
+  animation-duration: 2.5s;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  h4,
+  h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .education h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  p.progress-level {
+      font-size: 18px;
+  }
+
+  img.certificate-badge {
+      width: 24px;
+      height: 32px;
+  }
+
+  img.research-icon {
+      width: 30px;
+      height: 43.64px;
+  }
+
+  p.footer-text {
+      font-size: 16px;
+      line-height: 24px;
+  }
+}
