@@ -131,9 +131,6 @@ p.progress-level {
 }
 
 @media (min-width: 992px) {
-.jumbotron {
-  height: 100vh;
-}
 
 a.navbar-brand {
   font-size: 36px;
