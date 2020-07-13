@@ -17,6 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Font awesome icons -->
     <link
       rel="stylesheet"
@@ -31,7 +33,10 @@
   <body>
     <div class="container p-0 mw-100">
       <!--NAVBAR-->
-      <nav class="navbar justify-content-between py-0">
+      <nav
+        class="navbar position-fixed navbar-expand-lg py-0 px-md-5 w-100"
+        style="background: #f9f8f8; z-index: 99;"
+      >
         <a href="#" class="navbar-brand h4">
           <img src="assets/images/icons/Union.svg" alt="" />
           Gabrielle
@@ -42,17 +47,32 @@
           style="outline: none;"
           data-toggle="collapse"
           data-target="#navDropdown"
+          aria-controls="navDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navDropdown">
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">About</a>
-            <a href="#" class="nav-item nav-link">Skills</a>
-            <a href="#" class="nav-item nav-link">Portfolio</a>
-            <a href="#" class="nav-item nav-link">Contact</a>
-          </div>
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item active">
+              <a href="#" class="nav-link mr-4"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link mr-4">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link mr-4">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link mr-4">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -60,13 +80,13 @@
       <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container text-center text-md-left d-md-flex px-0">
           <img
-            class="rounded-circle d-md-none animate__animated animate__pulse"
+            class="rounded-circle d-md-none animate__animated animate__zoomIn"
             src="assets/images/hero-image-1.png"
             alt=""
-            style="background-color: #e07a5f;"
+            style="background-color: #e07a5f; overflow-y: hidden;"
           />
 
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 px-md-0 my-md-auto">
             <p class="font-weight-normal mt-2 mb-2">
               Hello, I'm Gabrielle Smith
             </p>
@@ -88,87 +108,126 @@
             </button>
           </div>
 
-          <div class="col-md-6 d-none d-md-block">
+          <div class="col-md-6 d-none d-md-block py-lg-5">
             <img
-              class="rounded-circle w-75 float-md-right animate__animated animate__pulse"
+              class="rounded-circle w-75 float-md-right animate__animated animate__zoomIn"
               src="assets/images/hero-image.png"
               alt=""
-              style="background-color: #e07a5f;"
+              style="background-color: #e07a5f; overflow-y: hidden;"
             />
           </div>
         </div>
       </div>
 
       <!-- THE DISPLAY CARDS -->
-      <div
-        class="row mt-3 mt-md-n5 py-4 px-3"
-        style="background: rgba(222, 218, 219, 0.2);"
-      >
+      <div class="container mt-3 mt-md-n5 py-4 px-3 px-md-5 mw-100 mx-0" 
+      style="background: rgba(222, 218, 219, 0.2);">
         <div
-          class="col-12 col-md-4 mb-4 text-center px-5 px-md-0 pl-md-3 pr-md-1"
+          class="row mx-md-5"
         >
           <div
-            class="card border-0 py-3 animate__animated animate__fadeInLeftBig animate__delay-3s animate__slower"
-            style="background: #3d405b; color: #f4f1de; border-radius: 10px;"
+            class="col-12 col-md-4 mb-4 text-center px-5 px-md-0 pl-md-3 pr-md-1"
+            style="overflow-y: hidden;"
           >
-            <div class="card-body">
-              <h5 class="card-title">User Research</h5>
-              <hr
-                class="mx-auto mt-0"
-                style="border: 2px solid #f4f1de; width: 43px;"
-              />
-              <p class="card-text">
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4 mb-4 text-center px-5 px-md-0 pl-md-2 pr-md-2"
-        >
-          <div
-            class="card border-0 py-3 animate__animated animate__fadeInRightBig animate__delay-3s animate__slower"
-            style="background: #e07a5f; color: #f4f1de; border-radius: 10px;"
-          >
-            <div class="card-body">
-              <h5 class="card-title">User Interface Design</h5>
-              <div>
+            <div
+              class="card border-0 py-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-quad"
+              style="
+                background: #3d405b;
+                color: #f4f1de;
+                border-radius: 10px;
+                overflow-y: hidden;
+              "
+            >
+              <div class="card-body">
+                <h5 class="card-title">User Research</h5>
                 <hr
                   class="mx-auto mt-0"
                   style="border: 2px solid #f4f1de; width: 43px;"
                 />
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
               </div>
-              <p class="card-text">
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                ipsum dolor sit amet.
-              </p>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4 text-center px-5 px-md-0 pl-md-1 pr-md-2">
           <div
-            class="card border-0 py-3 mb-4 animate__animated animate__fadeInLeftBig animate__delay-3s animate__slower"
-            style="background: #3d405b; color: #f4f1de; border-radius: 10px;"
+            class="col-12 col-md-4 mb-4 text-center px-5 px-md-0 pl-md-2 pr-md-2"
+            style="overflow-y: hidden;"
           >
-            <div class="card-body">
-              <h5 class="card-title mb-2">Brand Development</h5>
-              <hr
-                class="mx-auto mt-0"
-                style="border: 2px solid #f4f1de; width: 43px;"
-              />
-              <p class="card-text">
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                ipsum dolor sit amet.
-              </p>
+            <div
+              class="card border-0 py-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-quad"
+              style="
+                background: #e07a5f;
+                color: #f4f1de;
+                border-radius: 10px;
+                overflow-y: hidden;
+              "
+            >
+              <div class="card-body">
+                <h5 class="card-title mx-md-n2">User Interface Design</h5>
+                <div>
+                  <hr
+                    class="mx-auto mt-0"
+                    style="border: 2px solid #f4f1de; width: 43px;"
+                  />
+                </div>
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 text-center px-5 px-md-0 pl-md-1 pr-md-3 mb-4"
+            style="overflow-y: hidden;"
+          >
+            <div
+              class="card border-0 py-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-quad"
+              style="
+                background: #3d405b;
+                color: #f4f1de;
+                border-radius: 10px;
+                overflow-y: hidden;
+              "
+            >
+              <div class="card-body">
+                <h5 class="card-title mx-md-n2">Brand Development</h5>
+                <div>
+                  <hr
+                    class="mx-auto mt-0"
+                    style="border: 2px solid #f4f1de; width: 43px;"
+                  />
+                </div>
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
         <!--About me section-->
-        <div class="container mt-5 text-center" style="color: #232433;">
-          <h4 class="font-weight-bold text-center mb-3">ABOUT ME</h4>
-          <p style="line-height: 32px;">
+        <div
+          class="container mt-5 text-center"
+          id="about"
+          style="color: #232433;"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
+          <h4 class="font-weight-bold text-center mb-3 about-page">ABOUT ME</h4>
+          <p class="about-info">
             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
             dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
             elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -182,37 +241,77 @@
       </div>
 
       <div class="row d-grid d-lg-flex text-center mt-4 px-md-4">
-        <div class="col-12 col-md-4 col-lg-3 px-md-0">
+        <div class="col-lg-1"></div>
+        <div
+          class="col-12 col-md-4 col-lg-2 px-md-0"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           <h2 class="font-weight-bold">5</h2>
-          <p class="font-weight-bold">YEARS OF EXPERIENCE</p>
+          <p class="font-weight-bold info">YEARS OF EXPERIENCE</p>
         </div>
-        <div class="col-12 col-md-4 col-lg-2 px-md-0">
+        <div
+          class="col-12 col-md-4 col-lg-2 px-md-0"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           <h2 class="font-weight-bold">96</h2>
-          <p class="font-weight-bold">PROJECTS</p>
+          <p class="font-weight-bold info">PROJECTS</p>
         </div>
-        <div class="col-12 col-md-4 col-lg-3 px-md-0">
+        <div
+          class="col-12 col-md-4 col-lg-2 px-md-0"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           <h2 class="font-weight-bold">85</h2>
-          <p class="font-weight-bold">HAPPY CLIENTS</p>
+          <p class="font-weight-bold info">HAPPY CLIENTS</p>
         </div>
         <div class="col-md-2 d-md-block d-lg-none"></div>
-        <div class="col-12 col-md-4 col-lg-2 px-md-0">
+        <div
+          class="col-12 col-md-4 col-lg-2 px-md-0"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           <h2 class="font-weight-bold">127</h2>
-          <p class="font-weight-bold">CUPS OF COFFEE</p>
+          <p class="font-weight-bold info">CUPS OF COFFEE</p>
         </div>
-        <div class="col-12 col-md-4 col-lg-2 px-md-0">
+        <div
+          class="col-12 col-md-4 col-lg-2 px-md-0"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           <h2 class="font-weight-bold">25</h2>
-          <p class="font-weight-bold">AWARDS</p>
+          <p class="font-weight-bold info">AWARDS</p>
         </div>
         <div class="d-none d-lg-block col-lg-1"></div>
       </div>
 
       <!--My skills section-->
-      <div class="container mb-5 mt-5">
-        <h4 class="font-weight-bold text-center mb-3 mb-md-4">MY SKILLS</h4>
+      <div class="container mb-5 mt-5" id="skills">
+        <h4
+          class="font-weight-bold text-center mb-3 mb-md-4 skill-page"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
+          MY SKILLS
+        </h4>
         <div class="mb-2 mb-md-4" style="overflow-y: hidden;">
-          <div class="col-12">
-            <p class="float-left">Web Design</p>
-            <p class="font-weight-bold float-right progress-level" style="overflow-y: hidden;" >
+          <div
+            class="col-12"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <p class="float-left skill-name">Web Design</p>
+            <p
+              class="font-weight-bold float-right progress-level"
+              style="overflow-y: hidden;"
+            >
               96%
             </p>
           </div>
@@ -232,9 +331,16 @@
         </div>
 
         <div class="mb-2 mb-md-4" style="overflow-y: hidden;">
-          <div class="col-12">
-            <p class="float-left">Branding</p>
-            <p class="font-weight-bold float-right progress-level" style="overflow-y: hidden;">
+          <div
+            class="col-12"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <p class="float-left skill-name">Branding</p>
+            <p
+              class="font-weight-bold float-right progress-level"
+              style="overflow-y: hidden;"
+            >
               89%
             </p>
           </div>
@@ -254,9 +360,16 @@
         </div>
 
         <div class="mb-2 mb-md-4" style="overflow-y: hidden;">
-          <div class="col-12">
-            <p class="float-left">Mobile Design</p>
-            <p class="font-weight-bold float-right progress-level" style="overflow-y: hidden;">
+          <div
+            class="col-12"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <p class="float-left skill-name">Mobile Design</p>
+            <p
+              class="font-weight-bold float-right progress-level"
+              style="overflow-y: hidden;"
+            >
               97%
             </p>
           </div>
@@ -276,9 +389,16 @@
         </div>
 
         <div style="overflow-y: hidden;">
-          <div class="col-12">
-            <p class="float-left">Illustration</p>
-            <p class="font-weight-bold float-right progress-level" style="overflow-y: hidden;">
+          <div
+            class="col-12"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <p class="float-left skill-name">Illustration</p>
+            <p
+              class="font-weight-bold float-right progress-level"
+              style="overflow-y: hidden;"
+            >
               98%
             </p>
           </div>
@@ -300,7 +420,7 @@
 
       <!--EXPERIENCE AND EDUCATION-->
       <div class="container mb-5 mx-md-0 mw-100 education">
-        <h4 class="text-center font-weight-bold mb-md-4">
+        <h4 class="text-center font-weight-bold mb-md-4 experience-page">
           EXPERIENCE AND EDUCATION
         </h4>
         <!--experience & education 1-->
@@ -313,14 +433,14 @@
             />
           </div>
           <div class="col-8 col-md-10">
-            <p class="mb-0">2015-Present</p>
-            <p class="font-weight-bold">WEB DESIGNER - HIVERY</p>
-            <p class="d-none d-md-block">
+            <p class="mb-0 experience-date">2015-Present</p>
+            <p class="font-weight-bold experience-name">WEB DESIGNER - HIVERY</p>
+            <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
           </div>
-          <div class="col-2 d-block d-sm-none my-auto">
+          <div class="col-2 d-block d-md-none my-auto">
             <img
               src="assets/images/icons/angle-right 5.svg"
               alt=""
@@ -353,7 +473,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="row modal-body">
                 <div class="col-2">
                   <img
                     src="assets/images/icons/award 1.svg"
@@ -385,9 +505,9 @@
             />
           </div>
           <div class="col-8 col-md-10">
-            <p class="mb-0">2014-2015</p>
-            <p class="font-weight-bold">PROJECT MANAGER - THE FUTUR</p>
-            <p class="d-none d-md-block">
+            <p class="mb-0 experience-date">2014-2015</p>
+            <p class="font-weight-bold experience-name">PROJECT MANAGER - THE FUTUR</p>
+            <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
@@ -425,7 +545,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="row modal-body">
                 <div class="col-2">
                   <img
                     src="assets/images/icons/award 1.svg"
@@ -457,9 +577,9 @@
             />
           </div>
           <div class="col-8 col-md-10">
-            <p class="mb-0">2013-2014</p>
-            <p class="font-weight-bold">PRODUCT DESIGNER - PENTAGRAM</p>
-            <p class="d-none d-md-block">
+            <p class="mb-0 experience-date">2013-2014</p>
+            <p class="font-weight-bold experience-name">PRODUCT DESIGNER - PENTAGRAM</p>
+            <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
@@ -497,7 +617,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="row modal-body">
                 <div class="col-2">
                   <img
                     src="assets/images/icons/award 1.svg"
@@ -529,9 +649,9 @@
             />
           </div>
           <div class="col-8 col-md-10">
-            <p class="mb-0">2011-2013</p>
-            <p class="font-weight-bold">PRODUCT DESIGNER - GOOGLE</p>
-            <p class="d-none d-md-block">
+            <p class="mb-0 experience-date">2011-2013</p>
+            <p class="font-weight-bold experience-name">PRODUCT DESIGNER - GOOGLE</p>
+            <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
@@ -569,7 +689,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="row modal-body">
                 <div class="col-2">
                   <img
                     src="assets/images/icons/award 1.svg"
@@ -601,9 +721,11 @@
             />
           </div>
           <div class="col-10">
-            <p class="mb-0">2010-2011</p>
-            <p class="font-weight-bold">DESIGN RESEARCHER - GOOGLE</p>
-            <p>
+            <p class="mb-0 experience-date">2010-2011</p>
+            <p class="font-weight-bold experience-name">
+              DESIGN RESEARCHER - GOOGLE
+            </p>
+            <p class=" experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
@@ -612,15 +734,17 @@
       </div>
 
       <!--my works section-->
-      <div class="container">
-        <h4 class="text-center font-weight-bold">MY WORKS</h4>
+      <div class="container" id="portfolio">
+        <h4 class="text-center font-weight-bold work-page">MY WORKS</h4>
 
         <div class="row">
-          <div class="col-6 col-md-4 mb-2 pr-1">
+          <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
             <img
               src="assets/images/Mask Group3.png"
               alt=""
-              class="w-100 float-right animate__animated wow animate__fadeInLeft animate__slower slide"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="w-100 h-100 float-right"
             />
           </div>
 
@@ -628,34 +752,44 @@
             <img
               src="assets/images/Mask Group2.png"
               alt=""
-              class="w-100 animate__animated wow animate__fadeInRight animate__slower slide"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="w-100 h-100"
             />
           </div>
           <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
             <img
               src="assets/images/images (15) 2.png"
               alt=""
-              class="w-100 float-right animate__animated wow animate__fadeInLeft animate__slower slide"
+              class="w-100 h-100 float-right"
+              data-aos="fade-right"
+              data-aos-duration="2000"
             />
           </div>
-          <div class="col-6 col-md-4 mb-2 pl-1">
+          <div class="col-6 col-md-4 mb-2 pl-1 pr-md-1">
             <img
               src="assets/images/Mask Group4.png"
               alt=""
-              class="w-100 animate__animated wow animate__fadeInRight animate__slower slide"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              class="w-100 h-100"
             />
           </div>
-          <div class="col-6 col-md-4 mb-2 pr-1">
+          <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
             <img
               src="assets/images/Mask Group0.png"
               alt=""
-              class="float-right w-100 animate__animated wow animate__fadeInLeft animate__slower slide"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              class="float-right w-100"
             />
           </div>
-          <div class="col-6 col-md-4 mb-2 pl-1">
+          <div class="col-6 col-md-4 mb-2 pl-1 pr-md-1">
             <img
               src="assets/images/Mask Group.png"
-              class="w-100 animate__animated wow animate__fadeInRight animate__slower slide"
+              class="w-100 h-100"
+              data-aos="fade-left"
+              data-aos-duration="3000"
               alt=""
             />
           </div>
@@ -664,20 +798,24 @@
 
       <!--User research section-->
       <div
-        class="container mt-n4 pt-5 pb-4 mx-md-0 mw-100"
+        class="container mt-n4 pt-5 py-md-5 px-md-5 pb-4 mx-md-0 mw-100"
         style="
           background-color: #3d405b;
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
         "
       >
-        <div class="row">
+        <div class="row my-md-5 mx-md-5">
           <div
             class="col-12 px-md-5 mb-md-4 col-lg-4 text-center justify-content-center"
             style="color: #f4f1de;"
           >
-            <img src="assets/images/icons/Group 10.svg" alt="" class="mb-3 research-icon" />
-            <h5 class="font-weight-bold">User Research</h5>
-            <p>
+            <img
+              src="assets/images/icons/Group 10.svg"
+              alt=""
+              class="mb-3 research-icon"
+            />
+            <h5 class="font-weight-bold research">User Research</h5>
+            <p class="research-text px-5">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
               est Lorem ipsum dolor sit amet.
@@ -687,9 +825,13 @@
             class="col-12 px-md-5 mb-md-4 col-lg-4 text-center justify-content-center"
             style="color: #f4f1de;"
           >
-            <img src="assets/images/icons/Vector.svg" alt="" class="mb-3 research-icon" />
-            <h5 class="font-weight-bold">User Interface Design</h5>
-            <p>
+            <img
+              src="assets/images/icons/Vector.svg"
+              alt=""
+              class="mb-3 research-icon"
+            />
+            <h5 class="font-weight-bold research">User Interface Design</h5>
+            <p class="research-text px-5">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
               est Lorem ipsum dolor sit amet.
@@ -699,9 +841,13 @@
             class="col-12 px-md-5 col-lg-4 text-center justify-content-center"
             style="color: #f4f1de;"
           >
-            <img src="assets/images/icons/Vector1.svg" alt="" class="mb-3 research-icon" />
-            <h5 class="font-weight-bold">Brand Development</h5>
-            <p>
+            <img
+              src="assets/images/icons/Vector1.svg"
+              alt=""
+              class="mb-3 research-icon"
+            />
+            <h5 class="font-weight-bold research">Brand Development</h5>
+            <p class="research-text px-5">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
               est Lorem ipsum dolor sit amet.
@@ -712,72 +858,89 @@
 
       <!--GET IN TOUCH section-->
       <div
-        class="container mw-100 pt-5 pb-4"
-        style="background: rgba(222, 218, 219, 0.2);"
+        class="container mw-100 pt-5 pb-md-5"
+        id="contact"
+        style="background: #f9f4fb;"
       >
-        <h4 class="text-center font-weight-bold">GET IN TOUCH</h4>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="footer-text">
-              Feel free to get in touch with me, i am always open to discussing new
-              projects, creative ideas or opportunities to be part of your vision.
+        <h4 class="text-center font-weight-bold contact-page">GET IN TOUCH</h4>
+        <div class="row ml-lg-5">
+          <div class="col-12 col-lg-6 pt-lg-5 pr-lg-0">
+            <p class="footer-text contact-name mb-lg-4">
+              Feel free to get in touch with me, i am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              vision.
             </p>
-    
+
             <!--contact section-->
             <form action="submit">
-              <div class="form-group">
+              <div class="form-group mb-lg-4">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control py-lg-4 border-0"
                   style="border-radius: 10px;"
                   id="inputName"
                   placeholder="Your Name"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group mb-lg-4">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control py-lg-4 border-0"
                   style="border-radius: 10px;"
                   id="inputEmail"
                   placeholder="Your Email"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group mb-lg-4">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control py-lg-4 border-0"
                   style="border-radius: 10px;"
                   id="inputSubject"
                   placeholder="Subject"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group d-block d-md-none">
                 <textarea
                   name="message"
                   id=""
                   cols="30"
                   rows="3"
-                  class="form-control"
+                  class="form-control border-0"
                   style="border-radius: 10px; resize: none;"
                   placeholder="Message"
                 ></textarea>
               </div>
+              <div class="form-group d-none d-md-block">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="7"
+                  class="form-control border-0 py-lg-3"
+                  style="border-radius: 10px; resize: none;"
+                  placeholder="Leave a message"
+                ></textarea>
+              </div>
               <button
-                class="px-4 py-2 border-0"
+                class="px-4 py-2 border-0 px-md-5"
                 style="
                   background-color: #e07a5f;
                   color: white;
                   border-radius: 10px;
                 "
               >
-                HIRE ME
+                SEND
               </button>
             </form>
           </div>
-  
-          <div class="d-none d-md-block col-md-6">
-            <img src="assets/images/Mask Group5.png" alt="" class="img-fluid w-100 footer-image">
+
+          <div class="d-none d-lg-block col-lg-6 pl-lg-0">
+            <img
+              src="assets/images/Mask Group5.png"
+              alt=""
+              class="img-fluid w-100 footer-image"
+            />
           </div>
         </div>
       </div>
@@ -785,23 +948,25 @@
       <!--  FOOTER -->
       <footer>
         <div class="container text-center p-0">
-          <p>
+          <p class="footer-text my-md-2">
             We collaborate with ambitous brands, let’s build something together
           </p>
           <div class="d-flex justify-content-center">
             <i
-              class="fa fa-phone"
+              class="fa fa-phone phone pt-1"
               aria-hidden="true"
               style="color: #e07a5f;"
             ></i>
-            <p class="mr-2">+216 55 567 980</p>
+            <p class="mr-2 footer-text" style="color: #e07a5f;">
+              +216 55 567 980
+            </p>
             <i
-              class="fa fa-facebook-square mr-2"
+              class="fa fa-facebook-square mr-2 facebook"
               aria-hidden="true"
               style="color: #e07a5f;"
             ></i>
             <i
-              class="fa fa-twitter-square"
+              class="fa fa-twitter-square twitter"
               aria-hidden="true"
               style="color: #e07a5f;"
             ></i>
@@ -816,7 +981,11 @@
     <script src="assets/js/bootstrap-js/jquery.js"></script>
     <script src="assets/js/bootstrap-js/popper.js"></script>
     <script src="assets/js/bootstrap-js/bootstrap.js"></script>
-    <script src="assets/js/bootstrap-js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      window.addEventListener("load", AOS.refresh);
+    </script>
     <script src="assets/js/bootstrap-js/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>

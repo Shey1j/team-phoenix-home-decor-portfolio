@@ -12,6 +12,14 @@ a {
   color: #232433;
 }
 
+a.nav-link:hover {
+  color: #e07a5f !important;
+}
+
+a.nav-link:focus {
+  color: #e07a5f !important;
+}
+
 h4 {
   font-weight: 700;
   font-size: 18px;
@@ -45,7 +53,7 @@ button {
 }
 
 p.progress-level {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .card.underlay {
@@ -103,21 +111,101 @@ p.progress-level {
   }
 
   p.progress-level {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   img.certificate-badge {
-      width: 24px;
-      height: 32px;
+    width: 24px;
+    height: 32px;
   }
 
   img.research-icon {
-      width: 30px;
-      height: 43.64px;
+    width: 30px;
+    height: 43.64px;
   }
 
   p.footer-text {
-      font-size: 16px;
-      line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+a.navbar-brand {
+  font-size: 36px;
+}
+
+a.navbar-brand img {
+  width: 30px;
+height: 30px;
+}
+
+  p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h5.research {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  p.info {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  p.experience-info {
+    color: #3D405B;
+  }
+
+  p.research-text, p.experience-info, p.footer-text.contact-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p.about-info, p.card-text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  p.experience-date, p.skill-name, p.experience-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h4 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  h4.contact-page,
+  h4.work-page,
+  h4.experience-page,
+  h4.skill-page,
+  h4.about-page {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  p.footer-text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  p.contact-name 
+
+  i.phone {
+    font-size: 25px;
+  }
+
+  i.twitter,
+  i.facebook {
+    font-size: 26px;
   }
 }
