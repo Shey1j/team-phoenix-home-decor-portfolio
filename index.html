@@ -9,7 +9,12 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!--Animation CSS-->
     <link
@@ -78,7 +83,7 @@
 
       <!-- HERO SECTION -->
       <div class="jumbotron jumbotron-fluid mb-0">
-        <div class="container text-center text-md-left d-md-flex px-0">
+        <div class="container text-center text-md-left d-md-flex px-0 jumbotron-container">
           <img
             class="rounded-circle d-md-none animate__animated animate__zoomIn"
             src="assets/images/hero-image-1.png"
@@ -119,12 +124,98 @@
         </div>
       </div>
 
+      <div class="row min-vh-100 d-none d-md-flex" 
+         style="background: rgba(222, 218, 219, 0.2); margin-top: -50px; overflow-y: hidden;">
+          <div class="col-10 mx-auto" style="overflow-y: hidden;">
+            <div class="row text-center" style="overflow-y: hidden;">
+              <div class="col-sm pb-2">
+                <div class="card border-0 h-100"
+                data-aos="flip-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-quad"
+              style="
+                background: #3d405b;
+                color: #f4f1de;
+                border-radius: 10px;
+                overflow-y: hidden;
+              "
+                >
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">User Research</h5>
+                    <hr
+                      class="mx-auto mt-0"
+                      style="border: 2px solid #f4f1de; width: 43px;"
+                    />
+                    
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm pb-2">
+                <div class="card border-0 h-100"
+                data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-quad"
+              style="
+                background: #e07a5f;
+                color: #f4f1de;
+                border-radius: 10px;
+                overflow-y: hidden;
+              "
+                >
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">User Interface Design</h5>
+                    <hr
+                      class="mx-auto mt-0"
+                      style="border: 2px solid #f4f1de; width: 43px;"
+                    />
+                    
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm pb-2">
+                <div class="card border-0 h-100" data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-quad"
+                style="
+                  background: #3d405b;
+                  color: #f4f1de;
+                  border-radius: 10px;
+                  overflow-y: hidden;
+                ">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title">Brand Development</h5>
+                    <hr
+                      class="mx-auto mt-0"
+                      style="border: 2px solid #f4f1de; width: 43px;"
+                    />
+                    
+                <p class="card-text">
+                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+                </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!-- THE DISPLAY CARDS -->
-      <div class="container mt-3 mt-md-n5 py-4 px-3 px-md-5 mw-100 mx-0" 
-      style="background: rgba(222, 218, 219, 0.2);">
-        <div
-          class="row mx-md-5"
-        >
+      <div
+        class="container mt-3 py-4 px-3 mw-100 mx-0 mt-md-0"
+        style="background: rgba(222, 218, 219, 0.2);"
+      >
+        <div class="row mx-md-5 mt-md-n5 d-block d-md-none">
           <div
             class="col-12 col-md-4 mb-4 text-center px-5 px-md-0 pl-md-3 pr-md-1 pl-lg-3 pr-lg-3"
             style="overflow-y: hidden;"
@@ -171,7 +262,9 @@
               "
             >
               <div class="card-body">
-                <h5 class="card-title mx-md-n2 mx-lg-0">User Interface Design</h5>
+                <h5 class="card-title mx-md-n2 mx-lg-0">
+                  User Interface Design
+                </h5>
                 <div>
                   <hr
                     class="mx-auto mt-0"
@@ -222,12 +315,21 @@
           class="container mt-5 text-center"
           id="about"
           style="color: #232433;"
-          data-aos="fade-down"
-          data-aos-duration="2000"
-          data-aos-easing="ease-in-quad"
         >
-          <h4 class="font-weight-bold text-center mb-3 about-page">ABOUT ME</h4>
-          <p class="about-info">
+          <h4
+            class="font-weight-bold text-center mb-3 about-page"
+            data-aos="zoom-out-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-quad"
+          >
+            ABOUT ME
+          </h4>
+          <p
+            class="about-info"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-quad"
+          >
             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
             dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
             elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -420,7 +522,12 @@
 
       <!--EXPERIENCE AND EDUCATION-->
       <div class="container mb-5 mx-md-0 mw-100 education">
-        <h4 class="text-center font-weight-bold mb-md-4 experience-page">
+        <h4
+          class="text-center font-weight-bold mb-md-4 experience-page"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
           EXPERIENCE AND EDUCATION
         </h4>
         <!--experience & education 1-->
@@ -434,7 +541,9 @@
           </div>
           <div class="col-8 col-md-10">
             <p class="mb-0 experience-date">2015-Present</p>
-            <p class="font-weight-bold experience-name">WEB DESIGNER - HIVERY</p>
+            <p class="font-weight-bold experience-name">
+              WEB DESIGNER - HIVERY
+            </p>
             <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
@@ -506,7 +615,9 @@
           </div>
           <div class="col-8 col-md-10">
             <p class="mb-0 experience-date">2014-2015</p>
-            <p class="font-weight-bold experience-name">PROJECT MANAGER - THE FUTUR</p>
+            <p class="font-weight-bold experience-name">
+              PROJECT MANAGER - THE FUTUR
+            </p>
             <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
@@ -578,7 +689,9 @@
           </div>
           <div class="col-8 col-md-10">
             <p class="mb-0 experience-date">2013-2014</p>
-            <p class="font-weight-bold experience-name">PRODUCT DESIGNER - PENTAGRAM</p>
+            <p class="font-weight-bold experience-name">
+              PRODUCT DESIGNER - PENTAGRAM
+            </p>
             <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
@@ -650,7 +763,9 @@
           </div>
           <div class="col-8 col-md-10">
             <p class="mb-0 experience-date">2011-2013</p>
-            <p class="font-weight-bold experience-name">PRODUCT DESIGNER - GOOGLE</p>
+            <p class="font-weight-bold experience-name">
+              PRODUCT DESIGNER - GOOGLE
+            </p>
             <p class="d-none d-md-block experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
@@ -725,7 +840,7 @@
             <p class="font-weight-bold experience-name">
               DESIGN RESEARCHER - GOOGLE
             </p>
-            <p class=" experience-info">
+            <p class="experience-info">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
               dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus
             </p>
@@ -735,63 +850,98 @@
 
       <!--my works section-->
       <div class="container" id="portfolio">
-        <h4 class="text-center font-weight-bold mb-md-4 work-page">MY WORKS</h4>
+        <h4
+          class="text-center font-weight-bold mb-md-4 work-page"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
+          MY WORKS
+        </h4>
 
-        <div class="row">
+        <div class="row" style="margin-bottom: -100px; position: relative; z-index:100;">
           <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
-            <img
-              src="assets/images/Mask Group3.png"
-              alt=""
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              class="w-100 h-100 float-right"
-            />
+            <div class="card border-0">
+              <img
+                src="assets/images/Mask Group3.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="w-100 h-100 float-right"
+              />
+            </div>
           </div>
 
           <div class="col-6 col-md-4 mb-2 pl-1 pr-md-0">
-            <img
+            <div class="card border-0">
+              <img
               src="assets/images/Mask Group2.png"
               alt=""
               data-aos="fade-left"
               data-aos-duration="1000"
               class="w-100 h-100"
             />
+            </div>
           </div>
+
           <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
-            <img
-              src="assets/images/images (15) 2.png"
-              alt=""
-              class="w-100 h-100 float-right"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            />
+            <div class="card border-0">
+              <img
+                src="assets/images/images (15) 2.png"
+                alt=""
+                class="w-100 h-100 float-right"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+            </div>
           </div>
-          <div class="col-6 col-md-4 mb-2 pl-1 pr-md-1">
-            <img
+
+          <div class="col-6 col-md-4 mb-2 pl-1 pr-md-1 d-block d-md-none">
+            <div class="card border-0">
+              <img
               src="assets/images/Mask Group4.png"
               alt=""
               data-aos="fade-left"
               data-aos-duration="2000"
               class="w-100 h-100"
             />
+            </div>
           </div>
+
           <div class="col-6 col-md-4 mb-2 pr-1 pl-md-1">
-            <img
-              src="assets/images/Mask Group0.png"
-              alt=""
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              class="float-right w-100"
-            />
+            <div class="card border-0">
+              <img
+                src="assets/images/Mask Group0.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                class="float-right w-100"
+              />
+            </div>
           </div>
+
+          <div class="col-md-4 mb-2 pl-1 pr-md-1 d-none d-md-block">
+            <div class="card border-0">
+              <img
+              src="assets/images/Mask Group4.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              class="w-100 h-100"
+            />
+            </div>
+          </div>
+
           <div class="col-6 col-md-4 mb-2 pl-1 pr-md-1">
-            <img
+            <div class="card border-0">
+              <img
               src="assets/images/Mask Group.png"
               class="w-100 h-100"
               data-aos="fade-left"
               data-aos-duration="3000"
               alt=""
             />
+            </div>
           </div>
         </div>
       </div>
@@ -800,6 +950,7 @@
       <div
         class="container mt-n4 pt-5 py-md-5 px-md-5 pb-4 mx-md-0 mw-100"
         style="
+        position: relative;
           background-color: #3d405b;
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
         "
@@ -862,7 +1013,14 @@
         id="contact"
         style="background: #f9f4fb;"
       >
-        <h4 class="text-center font-weight-bold contact-page">GET IN TOUCH</h4>
+        <h4
+          class="text-center font-weight-bold contact-page"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-quad"
+        >
+          GET IN TOUCH
+        </h4>
         <div class="row ml-lg-5">
           <div class="col-12 col-lg-6 pt-lg-5 pr-lg-0">
             <p class="footer-text contact-name mb-lg-4">
@@ -978,14 +1136,25 @@
     <!-- Optional JavaScript -->
     <script src="./assets/js/custom.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/bootstrap-js/jquery.js"></script>
-    <script src="assets/js/bootstrap-js/popper.js"></script>
-    <script src="assets/js/bootstrap-js/bootstrap.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
       window.addEventListener("load", AOS.refresh);
     </script>
-    <script src="assets/js/bootstrap-js/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>
